@@ -8,7 +8,7 @@ app.use(express.json());
  * GET      => Buscar uma informação dentro do servidor
  * POST     => Inserir uma informação dentro no servidor
  * PUT      => Serve para alterar uma informação no servidor
- * PATCH    => Alterar uma informação especifica
+ * PAT CH    => Alterar uma informação especifica
  * DELETE   => Deletar uma informação no Servidor
  */
 
