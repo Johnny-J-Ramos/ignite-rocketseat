@@ -26,8 +26,8 @@ app.post("/account", (request, response) => {
       return response.status(400).json({ error: "CUstomer Already exists"});
    }
 
-   const id = uuidv4();
    //ID random
+   const id = uuidv4();
 
    customers.push({
       cpf,
@@ -54,3 +54,6 @@ app.get("/statement/:cpf", (request, response) => {
 })
 
 app.listen(3333);
+
+
+const nome = 'johnny'
