@@ -23,7 +23,13 @@ function verifyExistsAccountCPF(request, response, next) {
  }
 // Get Balance
 function GatBalance(statement) {
-   
+   const balance = statement.reduce((acc, operation) => {
+      if(operation.type === "Credit") {
+         return acc + operation.amount;
+      }else{
+         return acc - operation.amount;
+      }
+   })
 }
 
 //Register an account 
